@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과학교양</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <style>
+        a:hover{
+            color:tomato;
+        }
+        a:active{
+            color:powderblue;
+        }
+        aside>li{
+            font-size: 0.8rem;
+        }
+        .container{
+            justify-content: space-evenly;
+        }
+        .layer1{
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+        aside{
+            display: block;
+            float: left;
+            background-color:grey;
+            height:2000px;
+            width:10rem;
+            position:fixed;
+        }
+        .layer1{
+            height: 100%;
+            margin-left:10rem;
+        }
+        main{
+            font-size: 2.4rem;
+        }
+        .object1{
+            background-color:powderblue;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .object2{
+            width: 100px;
+            height: 100px;
+            background-color:powderblue;
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .object3{
+            width: 100px;
+            height: 100px;
+            background-color:powderblue;
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .object1:active{
+            background-color:tomato;
+            
+            transform: translateX(100px) scale(0.5);
+            transition-property:all;
+            transition-duration:3s;
+        }
+        .size{
+            font-size: 1rem;
+            color: powderblue;
+        }
+        .size:active{
+            color: black;
+            transition-property:all;
+            transition-duration:3s;
+        }
+        .size2{
+            font-size: 1rem;
+            color: powderblue;
+        }
+        .size2:active{
+            color: black;
+            transition-property:all;
+            transition-duration:3s;
+        }
+        .object2:active{
+            background-color:tomato;
+
+            transform: translateX(200px) scale(0.333);
+            transition-property:all;
+            transition-duration:6s;
+            transition-timing-function: ease-out;
+        }
+        .object3:active{
+            background-color:tomato;
+            
+            transform: translateX(300px) scale(0.25);
+            transition-property:all;
+            transition-duration:3s;
+            transition-timing-function: steps(3, jump-start);
+        }
+        .original{
+            color: black;
+        }
+        .original:active{
+            color: tomato;
+            transition-property:all;
+            transition-duration: 2s;
+        }
+    </style>
+    <div class="container">
+        <aside>
+            <img src="시야각.png"width="160", height="100" alt="시야각" />
+            <h2 class="chapter">
+                 거리에 따른 시야 차지율
+            </h2>
+            <li>
+                <a href="#object1">
+                    100m+100m
+                </a>
+                <br><br>
+            </li>
+            <li>
+                <a href="#object2">
+                    100m+100m
+                </a>
+                <br><br>
+            </li>
+            <li>
+                <a href="#object3">
+                    100m+1/2/300m
+                </a>
+                <br><br>
+            </li>
+        </aside>
+        <main class="layer1">
+            <div class="object1" id="object1">
+                <h3 class="text">100m</h3>
+                <div class="box1">
+                    <p class="size"><span class="original">size:1</span><br>size:0.5</p>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="object2" id="object2">
+                <h3 class="text">200m</h3>
+                <div class="box1">
+                    <p class="size"><span class="original">size:1</span><br>size:0.333</p>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="object3" id="object3">
+                <h3 class="text">300m</h3>
+                <div class="box1">
+                    <p class="size2"><span class="original">size:1</span><br>size:0.25</p>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </main>
+    </div>
+</body>
+</html>
+
